@@ -1,6 +1,6 @@
 const http = require("http");
 
-const oneTimeLinks = {};//list 
+const oneTimeLinks = {};//list now
 
 
 
