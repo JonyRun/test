@@ -44,7 +44,8 @@ function ser(req, res) {
     res.end(JSON.stringify({ error: 'плохая ссылка' }));
     return;
   }
-  res.writeHead(404);
+
+  res.writeHead(501);
   res.end();
 }
 
