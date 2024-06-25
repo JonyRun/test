@@ -11,6 +11,7 @@ function _line(len) {
   for (let i = 0; i < len; i++) {
     line += alphabet.charAt(Math.random() * alphabetLength | 0);
   }
+  return line;
 }
 function ser(req, res) {
   const { method, url } = req;
