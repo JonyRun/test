@@ -53,8 +53,9 @@ const server = http.createServer((req, res) => {
         ser(req,res);
   });
   
-  const port = 8091;
-  const host = "192.168.204.58";
+  const port = process.env.PORT || 8091;
+  const host = process.env.HOST || '0.0.0.0';
+  
   
   server.listen(port, host, () => {
     console.log(`Server running on http://${host}:${port}/`);
